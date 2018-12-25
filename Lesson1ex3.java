@@ -8,7 +8,7 @@ public class Lesson1ex3
         double b=random.nextFloat()*10000;
         System.out.println(r+" "+a+" "+b);
         //int sec=12;
-        if (r*r>=a*a+b*b) {System.out.println("можно");}  else {System.out.println("нельзя");} ;
+        if (4*r*r>=a*a+b*b) {System.out.println("можно");}  else {System.out.println("нельзя");} ;
         
         }
     }
