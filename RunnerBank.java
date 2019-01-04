@@ -8,6 +8,8 @@ public class RunnerBank {
 		System.out.println(CashMashine.getBag100());
 		CashMashine.addBag100(1);
 		System.out.println(CashMashine.getBag100() + " " + CashMashine.getBag50() + " " + CashMashine.getBag20());
+		System.out.println(CashMashine.giveMoney(3000));
+		System.out.println(CashMashine.getBag100() + " " + CashMashine.getBag50() + " " + CashMashine.getBag20());
 		System.out.println(CashMashine.giveMoney(210));
 		System.out.println(CashMashine.getBag100() + " " + CashMashine.getBag50() + " " + CashMashine.getBag20());
 		System.out.println(CashMashine.giveMoney(211));

@@ -10,7 +10,7 @@ public class Bancomat {
 	}
 
 	public int getBag50() {
-		return bag20;
+		return bag50;
 	}
 
 	public int getBag20() {
@@ -88,7 +88,7 @@ public class Bancomat {
 				int sum50 = j * 50;
 				// System.out.println(sum50);
 				for (int k = ((commonSum - sum100 - sum50) / 20); k >= 0; k--) {
-					if (0 == ((commonSum - sum100 - sum50) % 20)) {
+					if (k*20 == (commonSum - sum100 - sum50)) {
 						// System.out.println(((commonSum - sum100 - sum50) / 20)+" " +((commonSum -
 						// sum100 - sum50) % 20));
 						System.out.println(i + " по 100 " + j + " по 50 " + k + " по 20");
