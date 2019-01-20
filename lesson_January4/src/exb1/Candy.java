@@ -4,21 +4,6 @@ public class Candy extends Sweetness {
 	// конфета
 	private String name;
 
-/*	public Candy(String name, int weight, int sugarWeight) {
-		super(weight, sugarWeight);
-		this.name = name;
-	}
-*/
-	
-
-/*	public Candy(String name, int weight, int sugarWeight) {
-		// TODO Auto-generated constructor stub
-		super(weight, sugarWeight);
-		this.name = name;
-	}
-*/
-
-
 	public Candy(String name2, int weight, int sugarWeight) {
 		// TODO Auto-generated constructor stub
 		super(weight, sugarWeight);
