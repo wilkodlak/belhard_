@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Devices>
+<Device><Name>Processor</Name><Origin>China</Origin><Price currency="USD">199</Price><Critical>true</Critical><Type/></Device><Device><Name>Motherboard</Name><Origin>China</Origin><Price currency="USD">499</Price><Critical>true</Critical><Type><Inside>true</Inside><Electrisity used="Vatt">20</Electrisity><Cooler>true</Cooler></Type></Device></Devices>

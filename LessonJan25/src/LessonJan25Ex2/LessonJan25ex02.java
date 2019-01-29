@@ -1,4 +1,4 @@
-package LessonJan25Ex2;
+package lessonJan25Ex2;
 
 /*
  * 2.Записать в текстовый файл список файлов и каталогов любого выбранного каталога 
@@ -14,9 +14,10 @@ public class LessonJan25ex02 {
 	private static ArrayList<File> listWithFileNames = new ArrayList<>();
 
 	public static void main(String[] args) {
-		getListFiles("D:\\dev_");
+		getListFiles("D:\\dev");
 
-		try (FileWriter writer = new FileWriter("d:\\dev\\Letter.txt", false);) {
+		try {
+			FileWriter writer = new FileWriter("d:\\dev\\Letter.txt", false);
 
 			for (File fil : listWithFileNames) {
 				System.out.println(fil.getName());
@@ -30,14 +31,20 @@ public class LessonJan25ex02 {
 	}
 
 	public static void getListFiles(String str) {
-		File f = new File(str);
-		System.out.println("Make file List");
-		for (File s : f.listFiles()) {
-			if (s.isFile() || s.isDirectory()) {
-				listWithFileNames.add(s);
-			}
+		try {
+			File f = new File(str);
+			if (f.exists()) {
+			System.out.println("Make file List");
+			try {
+				for (File s : f.listFiles()) {
+					if (s.isFile() || s.isDirectory()) {
+						listWithFileNames.add(s);
+					}
+				}
+			} finally {
+			}}else {System.out.println("No such directiry "+str);}
+		} finally {
 		}
-
 	}
 
 }
